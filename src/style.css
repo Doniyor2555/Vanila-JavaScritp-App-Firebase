@@ -51,3 +51,9 @@
 .author{
   font-size: .8rem;
 }
+
+.floating-btn{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}

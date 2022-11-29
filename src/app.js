@@ -5,7 +5,8 @@ import './style.css';
 window.addEventListener("load", Question.renderList);
 const form = document.getElementById("form"),
       input = form.querySelector("#question-input"),
-      submitBtn = form.querySelector("#submit");
+      submitBtn = form.querySelector("#submit"),
+      modalBtn = document.querySelector("#modal-btn");
 
 form.addEventListener("submit", submitFormHandler);
 input.addEventListener("input", () => {

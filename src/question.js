@@ -42,5 +42,6 @@ function toCard(question){
   <div class="mui--text-black-54">${new Date(question.date).toLocaleDateString()}</div>
   <div class="mui--text-black-54">${new Date(question.date).toLocaleTimeString()}</div>
   <div>${question.text}</div>
+  <br>
   `;
 }
