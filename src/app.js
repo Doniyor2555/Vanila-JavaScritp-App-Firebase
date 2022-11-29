@@ -32,6 +32,10 @@ function submitFormHandler(event){
   }
 }
 
+
 function openModal(){
   createModal('Афторизация', getAuthForm());
+  document
+  .getElementById("auth-form")
+  .addEventListener("submit", authFormHandler);
 }
