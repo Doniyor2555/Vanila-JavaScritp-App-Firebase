@@ -9,6 +9,7 @@ const form = document.getElementById("form"),
       modalBtn = document.querySelector("#modal-btn");
 
 form.addEventListener("submit", submitFormHandler);
+modalBtn.addEventListener("click", openModal);
 input.addEventListener("input", () => {
   submitBtn.disabled = !isValid(input.value);
 });
@@ -28,4 +29,8 @@ function submitFormHandler(event){
     submitBtn.disabled = false;
     });
   }
+}
+
+function openModal(){
+  
 }
