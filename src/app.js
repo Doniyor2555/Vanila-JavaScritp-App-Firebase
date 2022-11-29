@@ -2,7 +2,7 @@ import { Question } from './question';
 import { isValid } from './utils';
 import './style.css';
 
-
+window.addEventListener("load", Question.renderList);
 const form = document.getElementById("form"),
       input = form.querySelector("#question-input"),
       submitBtn = form.querySelector("#submit");
