@@ -15,3 +15,7 @@ export function getAuthForm(){
   </form>
   `;  
 }
+
+export function authWithEmailAndPassword(email, password){
+  return fetch("")
+}
