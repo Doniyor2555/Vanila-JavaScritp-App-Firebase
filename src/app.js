@@ -1,5 +1,6 @@
 import { Question } from './question';
 import {createModal, isValid } from './utils';
+import { getAuthForm } from './auth';
 import './style.css';
 
 window.addEventListener("load", Question.renderList);
@@ -32,5 +33,5 @@ function submitFormHandler(event){
 }
 
 function openModal(){
-  createModal('Афторизация', "<h1>Test</h1>")
+  createModal('Афторизация', getAuthForm());
 }
