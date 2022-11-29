@@ -32,13 +32,19 @@ function submitFormHandler(event){
   }
 }
 
-function authFormHandler(e){
-  e.preventDefault();
-}
 
 function openModal(){
   createModal('Афторизация', getAuthForm());
   document
   .getElementById("auth-form")
   .addEventListener("submit", authFormHandler, {once: true});
+}
+
+function authFormHandler(event){
+  event.preventDefault();
+
+  const email = event.target.querySelector("#email").value;
+  const password = event.target.querySelector("#password").value;
+
+  console.log(email, password);
 }
