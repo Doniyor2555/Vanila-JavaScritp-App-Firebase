@@ -57,3 +57,11 @@
   bottom: 50px;
   right: 50px;
 }
+
+.modal{
+  max-width: 600px;
+  max-height: 300px;
+  margin: 100px auto;
+  overflow-y: auto;
+  background-color: #fff;
+}

@@ -5,5 +5,12 @@ export function isValid(value){
 export function createModal(title, content){
   const modal = document.createElement("div");
 
-  mui.overlay("on", modal)
+  modal.classList.add("modal");
+
+  modal.innerHTML = `
+    <h1>${title}</h1>
+    <div class="modal-content">${content}</div>
+  `;
+
+  mui.overlay("on", modal);
 }
